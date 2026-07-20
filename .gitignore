@@ -1,1 +1,14 @@
 .venv
+.env
+
+docs
+
+.claude
+
+.DS_Store
+
+__pycache__
+
+*.pyc
+
+.coverage
