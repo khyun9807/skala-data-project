@@ -87,10 +87,7 @@ def monthly_category_total(sales: list[dict]) -> dict[str, int]:
     acc: defaultdict[tuple[str, str], int] = defaultdict(int)
     for s in sales:
         acc[(s["month"], s["category"])] += s["amount"]
-    return {
-        f"{month} {category}": total
-        for (month, category), total in acc.items()
-    }
+    return {f"{month} {category}": total for (month, category), total in acc.items()}
 
 
 def main() -> None:

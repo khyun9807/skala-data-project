@@ -18,7 +18,9 @@ from pathlib import Path
 
 from pydantic import BaseModel, Field, ValidationError
 
-logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s", stream=sys.stdout)
+logging.basicConfig(
+    level=logging.INFO, format="%(levelname)s | %(message)s", stream=sys.stdout
+)
 logger = logging.getLogger(__name__)
 
 BASE_DIR = Path(__file__).resolve().parent
